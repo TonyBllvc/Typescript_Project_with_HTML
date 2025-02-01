@@ -1,0 +1,24 @@
+
+## Step one(install typescript globally):
+:- tsc sandbox.ts sandbox.js
+
+## step two (convert typescript to javascript):
+:- tsc sandbox.ts sandbox.js 
+
+** Now, but since we share same ".js" & ".ts" fiilename, we use:
+:- tsc sandbox.ts (this will automatically convert to js)
+
+** Now, we don't need to run that code everytime a change is made, yes
+so
+:- tsc sandbox.ts -w
+
+
+**## Now, down here, I am working with a workspace that contains public and src
+where html, css, and javascript codes go into the public, while the typescript goes to src
+
+## To run
+: first initialize
+:- tsc --init
+
+: Then
+:- tsc -w
