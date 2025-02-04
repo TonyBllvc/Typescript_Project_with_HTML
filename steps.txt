@@ -1,16 +1,16 @@
 
 ## Step one(install typescript globally):
-:- tsc sandbox.ts sandbox.js
+:- tsc app.ts app.js
 
 ## step two (convert typescript to javascript):
-:- tsc sandbox.ts sandbox.js 
+:- tsc app.ts app.js 
 
 ** Now, but since we share same ".js" & ".ts" fiilename, we use:
-:- tsc sandbox.ts (this will automatically convert to js)
+:- tsc app.ts (this will automatically convert to js)
 
 ** Now, we don't need to run that code everytime a change is made, yes
 so
-:- tsc sandbox.ts -w
+:- tsc app.ts -w
 
 
 **## Now, down here, I am working with a workspace that contains public and src
