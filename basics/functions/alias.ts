@@ -1,7 +1,7 @@
 
 
 // alias for function
-const logDetails = (uid: string | number, item: string) => {
+const logDetailss = (uid: string | number, item: string) => {
     console.log(`${item} has a uid of ${uid}`);
 }
 
@@ -9,7 +9,7 @@ const greet3 = (user: { name: string, uid: string | number }) => {
     console.log(`${user.name} says hello`);
 }
 
-logDetails(123, 'mario');
+logDetailss(123, 'mario');
 greet3({ name: 'yoshi', uid: '123' });
 // or 
 

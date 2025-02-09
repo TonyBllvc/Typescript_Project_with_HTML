@@ -1,4 +1,4 @@
-class Invoice {
+class Invoice9 {
     // Now note: All of out defined classes are public by default
     //  which is to say that they can be accessed from anywhere in the code.
 
@@ -18,11 +18,11 @@ class Invoice {
   }
 }
 
-const invOne = new Invoice("mario", "work on the mario website", 250);
-const invTwo = new Invoice("luigi", "work on the luigi website", 300);
+const invOne = new Invoice9("mario", "work on the mario website", 250);
+const invTwo = new Invoice9("luigi", "work on the luigi website", 300);
 // console.log(invOne, invTwo);
 
-let invoices: Invoice[] = []; // array of invoices objects
+let invoices: Invoice9[] = []; // array of invoices objects
 invoices.push(invOne);
 invoices.push(invTwo);
 
