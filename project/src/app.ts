@@ -18,13 +18,17 @@ const list = new ListTemplates(ul)
 
 form.addEventListener("submit", (e: Event) => { // type casting. e is an event. and we are sure that it is an event
     // Event is built in typescript interface
-  e.preventDefault();
+    e.preventDefault();
+    
+    let values: [string, string, number] // define a tuple
+
+    values = [tofrom.value, details.value, amount.valueAsNumber]
 
     let doc: HasFormatter;
     if (type.value === 'invoice') {
-        doc = new Invoice(tofrom.value, details.value, amount.valueAsNumber)
+        doc = new Invoice(...values)
     } else {
-        doc = new Payemnt(tofrom.value, details.value, amount.valueAsNumber)
+        doc = new Payemnt(...values)
     }
 
     list.render(doc, type.value, 'start')
@@ -37,5 +41,3 @@ form.addEventListener("submit", (e: Event) => { // type casting. e is an event. 
     //     amount.valueAsNumber // valueAsNumber is a built in property of the input element
     // );
 });
-
-2

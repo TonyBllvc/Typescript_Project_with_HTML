@@ -1,12 +1,12 @@
 
 // An interface defines how an object should look
-interface Resource<T>{
+interface ResourceGenericInterface<T>{
     uid: number;
     resourceName: string
     data: T // For flexibility on data
 }
 
-const dataThree: Resource<object> = {
+const dataThree: ResourceGenericInterface<object> = {
     uid: 1,
     resourceName: "Black",
     data: {
@@ -14,7 +14,7 @@ const dataThree: Resource<object> = {
     }
 }
 
-const dataFour: Resource<string[]> = {
+const dataFour: ResourceGenericInterface<string[]> = {
     uid: 2,
     resourceName: 'List',
     data: ["d"]
