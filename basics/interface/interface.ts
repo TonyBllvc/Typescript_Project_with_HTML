@@ -1,3 +1,5 @@
+
+// An interface defines how an object should look
 interface IsPerson2 {
     name: string;
     age: number;

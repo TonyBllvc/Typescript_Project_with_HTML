@@ -38,3 +38,4 @@ form.addEventListener("submit", (e: Event) => { // type casting. e is an event. 
     // );
 });
 
+2
